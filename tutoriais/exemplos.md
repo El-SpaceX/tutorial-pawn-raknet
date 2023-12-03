@@ -70,7 +70,7 @@ IPacket:PLAYER_SYNC(playerid, BitStream:bs) // Usa o macro em vez de utilizar a 
 }
 ```
 
->> # Ignorando pacotes
+> # Ignorando pacotes
 
 ```c
 const PLAYER_SYNC = 207; //cria uma variavel contendo o ID do nosso pacote
