@@ -20,6 +20,7 @@ Você também pode, por exemplo, escrever por cima de pacotes. O jogador envia um 
 
 O RakNet não sabe qual valores foram guardados no RPC, por tanto, voce deve enforma-lo ao ler ou escrever, por exemplo
 ```cpp
+//lendo um valor UINT16
 new valor;
 BS_Read(bs, PR_UINT16, valor); //PR_UINT 8 equivale a uint16(unsigned short) em C++
 ```

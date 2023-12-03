@@ -13,7 +13,7 @@ SetPlayerGravity(playerid, Float:gravity)
 	new BitStream:bs = BS_New(); 
 
     // A função BS_WriteValue, como o nome diz, escreve os valores no BitStream.
-	// Os Argumentos sao: variavel contendo o bitstream e logo em seguida um padrão se segue: tipo, valor, tipo, valor, tipo, valor, indo a quantidade de parametros do seu RPC.
+    // Os Argumentos sao: variavel contendo o bitstream e logo em seguida um padrão se segue: tipo, valor, tipo, valor, tipo, valor, indo a quantidade de parametros do seu RPC.
     BS_WriteValue( 
 		bs, //aqui passamos a variavel que criamos que recebe o BitStream de BS_New().
 		PR_FLOAT, gravity //aqui sempre indicamos, TIPO, valor, nesse caso, float e o valor da gravidade.
@@ -42,7 +42,7 @@ public OnOutcomingRPC(playerid, rpcid, BitStream:bs)
 {
 	if(rpcid == 146)
 	{
-        new Float:gravidade;
+        	new Float:gravidade;
 		BS_ReadValue(bs, PR_FLOAT, gravidade); // Lê a gravidade do tipo float e seta na variavel.
 		BS_ResetReadPointer(bs); //R eseta o ponteiro de leitura do RPC.
 	}
