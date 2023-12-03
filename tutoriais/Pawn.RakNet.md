@@ -24,7 +24,7 @@ new valor;
 BS_Read(bs, PR_UINT16, valor); //PR_UINT 8 equivale a uint16(unsigned short) em C++
 ```
 Tipos abaixo:   
-![Alt text](..\assets\tipos.png)
+![Tipos imagem](https://github.com/El-SpaceX/tutorial-pawn-raknet/blob/main/assets/tipos.png?raw=true)
 
 
 >## [Exemplo de uso](exemplos.md)
